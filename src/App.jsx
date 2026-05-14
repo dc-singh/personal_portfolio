@@ -85,14 +85,14 @@ const HeroSection = () => (
 const SkillsSection = () => {
   const skills = [
     { name: 'Web Development', level: '90%', icon: <Globe className="w-5 h-5 text-blue-500" /> },
-    { name: 'Python', level: '85%', icon: <Terminal className="w-5 h-5 text-purple-500" /> },
-    { name: 'Backend Development', level: '80%', icon: <Database className="w-5 h-5 text-green-500" /> },
+    { name: 'Python', level: '90%', icon: <Terminal className="w-5 h-5 text-purple-500" /> },
+    { name: 'Backend Development', level: '85%', icon: <Database className="w-5 h-5 text-green-500" /> },
     { name: 'AI Integration', level: '80%', icon: <Cpu className="w-5 h-5 text-pink-500" /> },
-    { name: 'React.js', level: '85%', icon: <Globe className="w-5 h-5 text-blue-400" /> },
-    { name: 'Node.js', level: '82%', icon: <Globe className="w-5 h-5 text-green-400" /> },
     { name: 'FastAPI', level: '80%', icon: <Terminal className="w-5 h-5 text-emerald-500" /> },
-    { name: 'MongoDB', level: '78%', icon: <Database className="w-5 h-5 text-green-600" /> },
+    { name: 'MongoDB', level: '85%', icon: <Database className="w-5 h-5 text-green-600" /> },
     { name: 'REST APIs', level: '85%', icon: <Code2 className="w-5 h-5 text-blue-500" /> },
+    { name: 'PostgreSQL', level: '75%', icon: <Database className="w-5 h-5 text-orange-500" /> },
+    { name: 'RAG', level: '78%', icon: <Terminal className="w-5 h-5 text-orange-500" /> },
     { name: 'Git & GitHub', level: '88%', icon: <Terminal className="w-5 h-5 text-orange-500" /> },
   ];
 
@@ -126,21 +126,29 @@ const ProjectsSection = () => {
       title: 'AI-Powered Chatbot Platform',
       desc: 'Built an intelligent chatbot system using Python and FastAPI, integrated with OpenAI\'s GPT models. Features include context-aware conversations, multi-user support, and real-time responses.',
       tags: ['Python', 'FastAPI', 'React', 'OpenAI API', 'MongoDB'],
+      github: 'https://github.com/yourusername/chatbot-project',
+      live: 'https://your-chatbot-demo.vercel.app'
     },
     {
-      title: 'E-Commerce Web Application',
-      desc: 'Full-stack e-commerce platform with product management, shopping cart, payment integration, and user authentication. Built with modern web technologies and responsive design.',
-      tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe API'],
+      title: 'Expense Tracker API With Budgeting Features',
+      desc: "Developed a RESTful API for an expense tracking application using FastAPI. The API allows users to manage expenses, set budgets, and generate financial reports. Integrated JWT authentication for secure user access.",
+      tags: ['Python', 'FastAPI', 'MongoDB', 'PostgreSQL'],
+      github: 'https://github.com/dc-singh/Expense_tracker_with_budget_API',
+      live: 'https://expense-tracker-demo.vercel.app'
     },
     {
-      title: 'Task Management System',
-      desc: 'Collaborative task management tool with real-time updates, team collaboration features, drag-and-drop interface, and priority-based task organization.',
-      tags: ['React', 'FastAPI', 'PostgreSQL', 'WebSockets'],
+      title: 'Task Management API with User Authentication',
+      desc: 'Created a task management API using FastAPI that allows users to create, update, and delete tasks. Implemented JWT authentication for secure access and PostgreSQL for data storage.',
+      tags: ['Python', 'FastAPI', 'PostgreSQL', 'JWT Auth'],
+      github: 'https://github.com/dc-singh/Task_management',
+      // live: 'https://task-management-demo.vercel.app'
     },
     {
-      title: 'Portfolio Analytics Dashboard',
-      desc: 'Data visualization dashboard for tracking website analytics, user behavior, and performance metrics. Features interactive charts and real-time data updates.',
-      tags: ['Python', 'Flask', 'Chart.js', 'MySQL'],
+      title: 'Car Rental Portfolio',
+      desc: 'A comprehensive car rental web application featuring vehicle listings, booking management, and customer management.',
+      tags: ['React', 'HTML', 'CSS'],
+      github: 'https://github.com/yourusername/chatbot-project',
+      live: 'https://divyanshi-tour-travels.vercel.app/'
     }
   ];
 
@@ -160,12 +168,16 @@ const ProjectsSection = () => {
               ))}
             </div>
             <div className="flex gap-4">
-              <button className="flex items-center gap-2 border border-zinc-700 hover:border-zinc-500 hover:bg-zinc-800 transition-colors px-4 py-2 rounded-lg text-sm font-semibold">
+              {project.github && (
+                <a href={project.github} target='_blank' rel="noopener noreferrer" className="flex items-center gap-2 border border-zinc-700 hover:border-zinc-500 hover:bg-zinc-800 transition-colors px-4 py-2 rounded-lg text-sm font-semibold">
                 <Code2 className="w-4 h-4" /> Code
-              </button>
-              <button className="flex items-center gap-2 bg-accent hover:bg-blue-600 transition-colors px-4 py-2 rounded-lg text-sm font-semibold">
-                <ExternalLink className="w-4 h-4" /> Live Demo
-              </button>
+              </a>
+              )}
+              {project.live && (
+                <a href={project.live} target='_blank' rel="noopener noreferrer" className="flex items-center gap-2 bg-accent hover:bg-blue-600 transition-colors px-4 py-2 rounded-lg text-sm font-semibold">
+                  <ExternalLink className="w-4 h-4" /> Live Demo
+                </a>
+              )}
             </div>
           </div>
         ))}
@@ -260,9 +272,9 @@ const ContactSection = () => {
             <div>
               <p className="text-zinc-500 text-xs font-semibold mb-4">Connect on social media</p>
               <div className="flex gap-3">
-                <button className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white rounded-xl transition-colors"><MessageCircle className="w-5 h-5" /></button>
-                <button className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white rounded-xl transition-colors"><Globe className="w-5 h-5" /></button>
-                <button className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white rounded-xl transition-colors"><Code2 className="w-5 h-5" /></button>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white hover:bg-zinc-700/80 rounded-xl transition-colors inline-block"><MessageCircle className="w-5 h-5" /></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white hover:bg-zinc-700/80 rounded-xl transition-colors inline-block"><Globe className="w-5 h-5" /></a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white hover:bg-zinc-700/80 rounded-xl transition-colors inline-block"><Code2 className="w-5 h-5" /></a>
               </div>
             </div>
           </div>
@@ -306,9 +318,9 @@ const Footer = () => (
       </div>
 
       <div className="flex gap-4 mb-8">
-        <button className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white hover:bg-zinc-700/80 rounded-xl transition-colors"><MessageCircle className="w-5 h-5" /></button>
-        <button className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white hover:bg-zinc-700/80 rounded-xl transition-colors"><Globe className="w-5 h-5" /></button>
-        <button className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white hover:bg-zinc-700/80 rounded-xl transition-colors"><Code2 className="w-5 h-5" /></button>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white hover:bg-zinc-700/80 rounded-xl transition-colors inline-block"><MessageCircle className="w-5 h-5" /></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white hover:bg-zinc-700/80 rounded-xl transition-colors inline-block"><Globe className="w-5 h-5" /></a>
+        <a href="https://github.com/dc-singh" target="_blank" rel="noopener noreferrer" className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white hover:bg-zinc-700/80 rounded-xl transition-colors inline-block"><Code2 className="w-5 h-5" /></a>
       </div>
 
       <div className="text-zinc-600 text-sm text-center">

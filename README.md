@@ -4,7 +4,7 @@ A personal portfolio website built with Vite, React, and Tailwind CSS. This repo
 
 ## Demo
 
-- Live demo: (add your live URL here)
+- Live demo: [live URL](https://nakul-portfolio-theta.vercel.app/)
 
 ## Built With
 
@@ -19,17 +19,6 @@ A personal portfolio website built with Vite, React, and Tailwind CSS. This repo
 - Clean, component-based React structure
 - Image assets and gallery in `Assets/Images`
 - Easy to customize styles via Tailwind
-
-## Project Structure
-
-- `index.html` — HTML entry
-- `src/main.jsx` — React entry
-- `src/App.jsx` — App component and routes
-- `src/index.css`, `App.css` — global and component styles
-- `src/assets/` — local assets used by the app
-- `public/` — static files served as-is
-- `Assets/Images/` — image assets included in the repo
-- `vite.config.js`, `tailwind.config.js`, `postcss.config.js` — build and style configs
 
 ## Getting Started
 
@@ -57,18 +46,6 @@ Common scripts (if using the default Vite setup)
 - `npm run build` — build production assets
 - `npm run preview` — locally preview production build
 
-## Customize
-
-- Update content in `src/App.jsx` and components in `src/` to change layout or sections.
-- Replace images in `Assets/Images/` and reference them from `src/assets/` or components.
-- Adjust Tailwind configuration in `tailwind.config.js` for theme and utilities.
-
-## Deployment
-
-This project can be deployed to Vercel, Netlify, GitHub Pages, or any static host that serves the built `dist/` folder. Typical steps:
-
-1. Build: `npm run build`
-2. Deploy the contents of `dist/` to your host
 
 ## Contributing
 
@@ -80,10 +57,3 @@ Add your contact info or a link to your email / socials here.
 
 ---
 
-If you want, I can also:
-
-- Add a live demo link and meta preview images
-- Add a short author/contact section with social links
-- Add CI or deployment configuration (Vercel/Netlify)
-
-Replace placeholders and tweak wording to match your personal branding.

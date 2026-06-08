@@ -84,12 +84,11 @@ const HeroSection = () => (
 
 const SkillsSection = () => {
   const skills = [
-    { name: 'Web Development', level: '90%', icon: <Globe className="w-5 h-5 text-blue-500" /> },
     { name: 'Python', level: '90%', icon: <Terminal className="w-5 h-5 text-purple-500" /> },
-    { name: 'Backend Development', level: '85%', icon: <Database className="w-5 h-5 text-green-500" /> },
+    { name: 'Backend Development', level: '90%', icon: <Database className="w-5 h-5 text-green-500" /> },
     { name: 'AI Integration', level: '80%', icon: <Cpu className="w-5 h-5 text-pink-500" /> },
-    { name: 'FastAPI', level: '80%', icon: <Terminal className="w-5 h-5 text-emerald-500" /> },
-    { name: 'MongoDB', level: '85%', icon: <Database className="w-5 h-5 text-green-600" /> },
+    { name: 'FastAPI', level: '85%', icon: <Terminal className="w-5 h-5 text-emerald-500" /> },
+    { name: 'MongoDB', level: '80%', icon: <Database className="w-5 h-5 text-green-600" /> },
     { name: 'REST APIs', level: '85%', icon: <Code2 className="w-5 h-5 text-blue-500" /> },
     { name: 'PostgreSQL', level: '75%', icon: <Database className="w-5 h-5 text-orange-500" /> },
     { name: 'RAG', level: '78%', icon: <Terminal className="w-5 h-5 text-orange-500" /> },

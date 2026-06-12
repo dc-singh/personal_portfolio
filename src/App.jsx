@@ -136,14 +136,14 @@ const ProjectsSection = () => {
       desc: "Developed a RESTful API for an expense tracking application using FastAPI. The API allows users to manage expenses, set budgets, and generate financial reports. Integrated JWT authentication for secure user access.",
       tags: ['Python', 'FastAPI', 'MongoDB', 'PostgreSQL'],
       github: 'https://github.com/dc-singh/Expense_tracker_with_budget_API',
-      live: 'https://expense-tracker-demo.vercel.app'
+      // live: 'https://expense-tracker-demo.vercel.app'
     },
     {
       title: 'Task Management API with User Authentication',
       desc: 'Created a task management API using FastAPI that allows users to create, update, and delete tasks. Implemented JWT authentication for secure access and PostgreSQL for data storage.',
       tags: ['Python', 'FastAPI', 'PostgreSQL', 'JWT Auth'],
       github: 'https://github.com/dc-singh/Task_management',
-      // live: 'https://task-management-demo.vercel.app'
+      live: 'https://task-management-8owj.onrender.com/'
     },
     {
       title: 'Car Rental Portfolio',
@@ -165,7 +165,7 @@ const ProjectsSection = () => {
   useEffect(() => {
     let interval;
     if (isAutoPlaying) {
-      interval = setInterval(nextSlide, 5000);
+      interval = setInterval(nextSlide, 3000);
     }
     return () => clearInterval(interval);
   }, [isAutoPlaying, nextSlide]);
@@ -370,9 +370,9 @@ const ContactSection = () => {
             <div>
               <p className="text-zinc-500 text-xs font-semibold mb-4">Connect on social media</p>
               <div className="flex gap-3">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white hover:bg-zinc-700/80 rounded-xl transition-colors inline-block"><MessageCircle className="w-5 h-5" /></a>
+                <a href="https://www.linkedin.com/in/nakul-python-developer" target="_blank" rel="noopener noreferrer" className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white hover:bg-zinc-700/80 rounded-xl transition-colors inline-block"><MessageCircle className="w-5 h-5" /></a>
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white hover:bg-zinc-700/80 rounded-xl transition-colors inline-block"><Globe className="w-5 h-5" /></a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white hover:bg-zinc-700/80 rounded-xl transition-colors inline-block"><Code2 className="w-5 h-5" /></a>
+                <a href="https://github.com/dc-singh" target="_blank" rel="noopener noreferrer" className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white hover:bg-zinc-700/80 rounded-xl transition-colors inline-block"><Code2 className="w-5 h-5" /></a>
               </div>
             </div>
           </div>
@@ -416,7 +416,7 @@ const Footer = () => (
       </div>
 
       <div className="flex gap-4 mb-8">
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white hover:bg-zinc-700/80 rounded-xl transition-colors inline-block"><MessageCircle className="w-5 h-5" /></a>
+        <a href="https://www.linkedin.com/in/nakul-python-developer" target="_blank" rel="noopener noreferrer" className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white hover:bg-zinc-700/80 rounded-xl transition-colors inline-block"><MessageCircle className="w-5 h-5" /></a>
         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white hover:bg-zinc-700/80 rounded-xl transition-colors inline-block"><Globe className="w-5 h-5" /></a>
         <a href="https://github.com/dc-singh" target="_blank" rel="noopener noreferrer" className="bg-zinc-800/80 p-3 text-zinc-400 hover:text-white hover:bg-zinc-700/80 rounded-xl transition-colors inline-block"><Code2 className="w-5 h-5" /></a>
       </div>

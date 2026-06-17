@@ -65,7 +65,7 @@ const HeroSection = () => (
       Hi, I'm <span className="text-accent">Nakul Kumar</span>
     </h1>
     <h2 className="text-2xl md:text-3xl text-zinc-300 font-medium mb-6">
-      BCA Student & Full Stack Developer
+      BCA Student & Back End Developer - Python, FastAPI
     </h2>
     <p className="text-zinc-400 text-base md:text-lg mb-10 max-w-2xl leading-relaxed">
       Building innovative solutions with modern technologies.<br className="hidden md:block" />
